@@ -12,3 +12,15 @@ switch(a)
 	case 7:Console.Write("ВС");break;
 	default:Console.Write("ошибка");break;
 }
+
+2 Задание
+Console.WriteLine("Введите год");
+int a = int.Parse(Console.ReadLine());
+if ((a%400==0) || ((a%4==0) && !(a%100==0)))
+{
+	Console.Write("Високосный");
+}
+else
+{
+	Console.Write("Не високосный");
+}

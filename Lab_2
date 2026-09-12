@@ -70,3 +70,35 @@ switch(c)
 		}
 	default:Console.Write("error");break;
 }
+
+5 задание
+Console.WriteLine("Введите первое число");
+int a = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите второе число");
+int b = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите третье число");
+int c = int.Parse(Console.ReadLine());
+
+if (a!=0)
+{
+	int D = (int)(4*Math.Pow(b,2)-a*c);
+	if (D>0)
+	{
+		int x1 = (int)((-b+Math.Sqrt(D))/2*a);
+		int x2 = (int)((-b-Math.Sqrt(D))/2*a);
+		Console.Write($"{x1}, {x2}");
+	}
+	else if (D<0)
+	{
+		Console.Write("корней нет");
+	}
+	else
+	{
+		int x = (int)((-b+Math.Sqrt(D))/2*a);
+		Console.Write($"{x}");
+	}
+}
+else
+{
+	Console.Write("не квадратное уравнение");
+}

@@ -24,3 +24,24 @@ else
 {
 	Console.Write("Не високосный");
 }
+
+3 задание
+Console.WriteLine("Введите первое число");
+int a = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите второе число");
+int b = int.Parse(Console.ReadLine());
+Console.WriteLine("1 - сложить");
+Console.WriteLine("2 - вычесть");
+Console.WriteLine("3 - умножить");
+Console.WriteLine("4 - разделить") ; 
+int c = int.Parse(Console.ReadLine());
+switch(c)
+{
+	case 1:Console.Write(a+b);break;
+	case 2:Console.Write(a-b);break;
+	case 3:Console.Write(a*b);break;
+	case 4:Console.Write(a/b);break;
+	default:Console.Write("error");break;
+}
+
+4 задание

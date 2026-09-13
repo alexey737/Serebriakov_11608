@@ -1,5 +1,5 @@
 Console.WriteLine("Введите день недели");
-int a = int.Parse(Console.ReadLine());
+int a = int.Parse(Console.ReadLine());                                                         ОБЪЕДИНЕНИЕ ПРОГРАММ СНИЗУ
 
 switch(a)
 {
